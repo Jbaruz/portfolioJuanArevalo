@@ -1,0 +1,15 @@
+/* Custom css goes here */
+*{
+    margin: 0;
+    padding :0;
+    /* outline: 1px dotted pink; */
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+
+.navbar-brand img{
+
+    width: 40px;
+    height: 40px;
+}
