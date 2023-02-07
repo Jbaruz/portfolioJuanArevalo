@@ -4,52 +4,110 @@
 <!-- <h1><%= title %></h1>
 <p>Welcome to <%= title %></p> -->
 <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-6">Welcome to the <%=title%> page</h1>
-    </div>
-  
-    <div class="d-flex">
+  <div class="jumbotron">
+      <h1 class="display-7">Welcome to the <%=title%> page</h1>
+  </div>
+  <div class="d-flex">
       <div class="p-2 flex-fill">
-        <div class="card" style="width: 16rem;">
-          <img src="../assets/images/juan.jpg" class="card-img-top" alt="my photo">
-          <div class="card-body">
-            <h5 class="card-title">Juan Arevalo</h5>
-            <p class="card-text">Life with challenges is a higher motive to keep evolving .</p>
-          </div>
+        <div class="card-body text-center">
+          <img src="../assets/images/juanAre.jpg" alt="Juan"
+            class="rounded-circle img-fluid" style="width: 150px;">
+          <h5 class="my-3">Juan Arevalo</h5>
+          <p class="text-muted mb-1">Full Stack Developer</p>
+          <p class="text-muted mb-4">Ajax Area, Ontario, CA</p>
         </div>
       </div>
       <div class="p-2 flex-fill">
-        <div class="card">
-          <div class="card-header">
-            Quote
-          </div>
-          <div class="card-body">
-            <blockquote class="blockquote mb-0">
-              <p>A well-known quote, contained in a blockquote element.</p>
-              <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-          </div>
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
+          <section style="background-color: white;">
+              <div class="container py-5">
+                <div class="row">
+                  <div class="col-lg-4">
+                      <div class="card-body p-0">
+                        <ul class="list-group list-group-flush rounded-3">
+                          <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                            <p class="mb-0">Jbaruz</p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                            <p class="mb-0">@Jbaruz</p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                            <p class="mb-0">jbaruz1</p>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <i class="fab fa-linkedin fa-lg" style="color: #3b5998;"></i>
+                            <p class="mb-0">jbaruz</p>
+                          </li>
+                        </ul>
+                      </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="card mb-4">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <p class="mb-0">Full Name</p>
+                          </div>
+                          <div class="col-sm-9">
+                            <p class="text-muted mb-0">Juan Bibiano Arevalo Ruiz</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <p class="mb-0">Email</p>
+                          </div>
+                          <div class="col-sm-9">
+                            <p class="text-muted mb-0">jbaruz@gmail.com</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <p class="mb-0">Mobile</p>
+                          </div>
+                          <div class="col-sm-9">
+                            <p class="text-muted mb-0">(01) 437-557-6885</p>
+                          </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <p class="mb-0">Address</p>
+                          </div>
+                          <div class="col-sm-9">
+                            <p class="text-muted mb-0">Ajax Area, Ontario, CA</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
       </div>
       <div class="p-2 flex-fill">
-        <div class="list-group">
-            <a href="/" class="list-group-item list-group-item-action list-group-item-light text-center">Home</a>
-            <a href="/about" class="list-group-item list-group-item-action list-group-item-light text-center">About me</a>
-            <a href="projects" class="list-group-item list-group-item-action list-group-item-light text-center">Projects</a>
-            <a href="/services" class="list-group-item list-group-item-action list-group-item-light text-center">Services</a>
-            <a href="/contact" class="list-group-item list-group-item-action list-group-item-light text-center">Contact me</a>
-        </div>
-    </div>
-    </div>
-  </main>
+          <div class="list-group py-5">
+              <a href="/" class="list-group-item list-group-item-action list-group-item-light text-center">Home</a>
+              <a href="/about" class="list-group-item list-group-item-action list-group-item-light text-center">About me</a>
+              <a href="projects" class="list-group-item list-group-item-action list-group-item-light text-center">Projects</a>
+              <a href="/services" class="list-group-item list-group-item-action list-group-item-light text-center">Services</a>
+              <a href="/contact" class="list-group-item list-group-item-action list-group-item-light text-center">Contact me</a>
+          </div>
+      </div>
+  </div>
+</main>
 
 
 
