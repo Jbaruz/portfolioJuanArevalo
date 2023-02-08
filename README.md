@@ -1,6 +1,6 @@
 ## Portfolio site Juan Arevalo
 - Home Page (complete)
 - About me (complete)
-- Project page (in progress)
-- Services page (in progress)
+- Project page (complete)
+- Services page (complete)
 - Contact me (complete)
