@@ -12,7 +12,7 @@ let localStrategy = passportLocal.Strategy;
 let flash = require('connect-flash');
 //database setup
 let mongoose = require('mongoose');
-let DB = require('./db');
+let DB = process.env.DB || require('./db');
 //point mongoose to the db URI
 mongoose.connect(DB.URI, {useNewUrlParser: true, useUnifiedTopology: true});
 //create an event to let mongo connect to the database
