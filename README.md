@@ -4,3 +4,5 @@
 - Project page (complete)
 - Services page (complete)
 - Contact me (complete)
+- login
+- Contacts

@@ -14,7 +14,7 @@
                 <br>
                 <table class="table table-bordered table-stripped table-hover">
                     <!-- Header Row -->
-                    <tr class="d-flex">
+                    <tr>
                         <%if(typeof displayName =='string' && displayName){%>
                         <th class="text-content col-2">Name</th>
                         <th class="text-content col-2">Number</th>
@@ -29,12 +29,11 @@
                             <th class="text-content col-2">Number</th>
                             <th class="text-content col-2">Email</th>
                             <th class="text-content col-1">Username</th>
-                            <th class="text-content col-1">Password</th>
                         <%}%>
                     </tr>
                     <!-- END Header Row -->
                     <% for(let count =0; count<ContactList.length; count ++){%>
-                        <tr class="d-flex">
+                        <tr>
                             <%if(typeof displayName =='string' && displayName){%>
                             <td class="text-center col-2"><%=ContactList[count].Name%></td>
                             <td class="text-center col-2"><%=ContactList[count].Number%></td>
@@ -48,7 +47,7 @@
                                 <td class="text-center col-2"><%=ContactList[count].Number%></td>
                                 <td class="text-center col-2"><%=ContactList[count].Email%></td>
                                 <td class="text-center col-1"><%=ContactList[count].Username%></td>
-                                <td class="text-center col-1"><%=ContactList[count].Password%></td>
+
                             <%}%>
                         </tr>
                     <%}%>                 
