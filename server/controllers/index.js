@@ -6,17 +6,17 @@ module.exports.displayHomePage = (req,res,next) => {
 }
 
 module.exports.displayAboutPage = (req,res,next) => {
-    res.render('index',{title: 'About'});
+    res.render('about',{title: 'About'});
 }
 
 module.exports.displayProjectsPage = (req,res,next) => {
-    res.render('index', {title: 'Projects'});
+    res.render('projects', {title: 'Projects'});
 }
 
 module.exports.displayServicesPage = (req,res,next) => {
-    res.render('index', {title: 'Services'});
+    res.render('services', {title: 'Services'});
 }
 
 module.exports.displayContactPage = (req,res,next) => {
-    res.render('index', {title: 'Contact'});
+    res.render('contact', {title: 'Contact'});
 }

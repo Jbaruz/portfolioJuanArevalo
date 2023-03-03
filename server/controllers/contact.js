@@ -27,6 +27,8 @@ module.exports.processAddPage = (req,res,next) => {
         "Name":req.body.name,
         "Number":req.body.number,
         "Email":req.body.email,
+        "Username":req.body.username,
+        "Password":req.body.password
     });
     Contact.create(newContact,(err,Contact) => {
         if (err)
@@ -66,6 +68,8 @@ module.exports.processEditPage = (req,res,next) => {
         "Name":req.body.name,
         "Number":req.body.number,
         "Email":req.body.email,
+        "Username":req.body.username,
+        "Password":req.body.password
     });
     Contact.updateOne({_id:id}, updatedContact, (err) => {
         if (err)
