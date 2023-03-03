@@ -5,20 +5,23 @@ let mongoose = require('mongoose');
 let Contact = require('../models/contacts');
 // we want to display the ContactList 
 module.exports.displayContactList = (req, res, next) => {
-    // console.log('bug')
+    // console.log('bug---------->>>>>>>>')
     Contact.find((err, contactList) => {
         if (err) {
             return console.error(err);
         }
         else {
-            // console.log(ContactList);
-            res.render('contact/list', {title:'Contacts', ContactList:contactList})
+            // console.log('bug---------->>>>>>>>',contactList);
+            res.render('contact/list',
+            {title:'Contacts', ContactList:contactList,
+            displayName:req.user?req.user.displayName:''})
         }
     });
 }
 
 module.exports.displayAddPage = (req, res, next) => {
-    res.render('contact/add', {title:'Add Contact'});
+    res.render('contact/add', {title:'Add Contact', 
+    displayName:req.user?req.user.displayName:''});
 }
 
 module.exports.processAddPage = (req,res,next) => {
@@ -54,7 +57,8 @@ module.exports.displayEditPage = (req,res,next) => {
         }
         else
         {
-            res.render('contact/edit', {title: 'Edit Contact', contact:contactToEdit});
+            res.render('contact/edit', {title: 'Edit Contact', contact:contactToEdit,
+            displayName:req.user?req.user.displayName:''});
         }
     });
 

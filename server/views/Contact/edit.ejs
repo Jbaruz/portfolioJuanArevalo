@@ -34,6 +34,26 @@
                     value="<%=contact.email%>"
                     name="email" required>
                 </div>
+
+                <div class="form group">
+                    <label for="usernameTextField">Contact Username</label>
+                    <input type="text" class="form control"
+                    id="usernameTextField"
+                    placeholder="Enter the username of the contact"
+                    name="username"
+                    value="<%=contact.username%>" 
+                    required>
+                </div>
+
+                <div class="form group">
+                    <label for="passwordTextField">Contact Password</label>
+                    <input type="text" class="form control"
+                    id="passwordTextField"
+                    placeholder="Enter the password of the contact"
+                    name="password" 
+                    value="<%=contact.password%>"
+                    required>
+                </div>
                 <button class="btn btn-primary" type = "submit"><i class="fas fa-edit"></i> Submit</button>
                 <a href="/contactList" class="btn btn-warning"><i class="fast fa-undo"></i>cancel</a>
                 
